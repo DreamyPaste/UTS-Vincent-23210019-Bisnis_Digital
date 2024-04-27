@@ -1,0 +1,154 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.home_banner{
+    width: 110%;
+    height: 110vh;
+    background-image: linear-gradient(rgba(0,0,0,0.70), rgba(0,0,0,0.70)), url(pegunungan.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.navbar{
+    width: 85%;
+    margin: auto;
+    padding: 35px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.navbar ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+    text-align: center;
+}
+
+.navbar ul li a{
+    text-decoration: none;
+    color: white;
+}
+
+.active{
+    background-color: skyblue;
+    align-items: center;
+    padding: 15px;
+    border-radius: 25px;  
+    width: 85px;
+}
+
+.navbar li a:hover{
+    background-color: skyblue;
+    color: black;
+    padding: 5px;
+    border-radius: 25px;  
+    width: 300px;
+    transition: all ease-in-out 0.2s;
+}
+
+.desc{
+    width: 100%;
+    position: absolute;
+    top: 25%;
+    left: 10%;
+    right: 10%;
+    transform: translateY(-50%);
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+}
+
+.desc p{
+    margin: auto;
+    font-weight: 100;
+    line-height: 25px;
+    font-family: verdana;
+}
+
+.card_container{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 25px;
+    margin-top: 80px;
+}
+
+.card_desc{
+    display: none;
+}
+
+.card{
+    width: 325px;
+    background-color: slategrey;
+    border-radius: 10%;
+    overflow: hidden;
+    box-shadow: 0, 2, 4, rgba(0,0,0,0.2);
+    transition: transform 0.6s ease;
+}
+
+.card:hover{
+    transform: translateY(-5px);
+    background-color: skyblue;
+    color: black;
+    transition: all ease-in-out 0.6s;
+
+.card_desc{
+    display:block;
+    width: 325px;
+    background-color: white;
+    color: black;
+    text-align: center;
+    transition: all ease-in-out 0.6s;
+}
+}
+
+.card_content{
+    padding: 16px;
+}
+
+.card_content h2{
+    margin-bottom: 8px;
+    justify-content: center;
+    text-align: center;
+}
+
+.p{
+    color: black;
+    font-size: 14px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.card_content button{
+    position: absolute;
+    align-items: right;
+    display:inline-block;
+    padding: 8, 15;
+    background-color: skyblue;
+    text-decoration: none;
+    border-color: transparent;
+    border-radius: 4px;
+}
+
+@media screen and (max-width: 1000px){
+    .desc{
+        width: 100%;
+        position: absolute;
+        top: 145px;
+        left: 10%;
+        right: 10%;
+        font-family: Arial, Helvetica, sans-serif;
+        color: white;
+        display: block;
+        justify-content: center;
+    }
+    
+    .desc p{
+        margin: auto;
+        font-weight: 100;
+        line-height: 25px;
+    }
+
+}
